@@ -4,7 +4,3 @@ __pycache__/
 venv/
 .env
 .DS_Store
-.vscode/
-models/*.joblib
-data/*.csv
-!data/README.md

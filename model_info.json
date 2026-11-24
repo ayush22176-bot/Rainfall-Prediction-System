@@ -1,0 +1,19 @@
+{
+  "best_model": "Random Forest",
+  "metrics": {
+    "Decision Tree": {
+      "accuracy": 0.9167,
+      "precision": 0.9167,
+      "recall": 0.9778,
+      "f1_score": 0.9462
+    },
+    "Random Forest": {
+      "accuracy": 0.95,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1_score": 0.9677
+    }
+  },
+  "dataset_rows": 240,
+  "note": "Metrics use a 25% hold-out test split (random_state=42)."
+}

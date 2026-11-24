@@ -1,13 +1,11 @@
-# Dataset
+# Dataset instructions
 
-Place your rainfall dataset in this folder as `rainfall.csv`.
+`train_model.py` automatically creates `rainfall.csv` the first time it runs. It is a **synthetic demonstration dataset** made from weather-like ranges, intended only to make the project runnable without a download.
 
-The training script expects these columns (column names are case-insensitive):
+For a real project, replace it with your own CSV named `rainfall.csv` in this folder. It must have these exact columns:
 
-- `humidity`
-- `temperature`
-- `pressure`
-- `wind_speed`
-- `rainfall` (target: yes/no, 1/0, or equivalent labels)
+```text
+humidity,temperature,pressure,wind_speed,rainfall
+```
 
-Do not upload private or very large datasets to GitHub. This folder intentionally contains instructions only.
+Use numbers for the first four columns. The `rainfall` value must be `Yes` or `No`. Use a trustworthy local weather-data source, document its origin and licensing, and retrain with `python train_model.py`.
